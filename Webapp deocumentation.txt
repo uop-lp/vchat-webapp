@@ -1,0 +1,89 @@
+LivePerson-UoP Video Chat - a.k.a Azara
+
+App Documentation 
+This App is an AngularJS wrapper build on the Angular Seed which provides a skeleton for bootstrapping and also sets the ground for unit testing. This app is responsible for the following functions: 
+1. Manages the look and feel of webpage exposed to user
+2. Controls DOM
+3. Fetches data from the server or specifically, sends and receives stream between browsers
+Folders
+o Webapp
+* bower-components
+* CSS
+* img
+* js
+- app.js
+- controllers.js
+- directives.js
+- filters.js
+- services.js
+* partials
+* index-async.html
+* index.html
+* npm-debug.log
+
+Directives & Modules
+o ng-vchatApp  (main module to bootstrap app and define its scope)
+o ng-vchatLoaderApp  (road provider)
+* vchatCtrl (app controller to control view)
+* vchatLoaderApp.service (road provider to fetch data from server)
+* ?
+* ?
+* ?
+* $cope  (links controller and views)
+
+Skeleton – implementing files listed above under folders heading
+Controllers.js  
+ ngular.module('vchatApp.controllers', [])
+  .controller('vchatController', ['$scope', function($scope) {
+    $scope.video = [];
+    $scope.audeo = [];
+   $scope.screenCapture = [];
+
+  }])
+  .controller('myCtrl-2', ['$scope', function($scope) {
+  }]);
+app.js    //road provider to fetch data from server
+angular.module('vchatLoaderderApp', [
+  'ngRoute',
+  'myApp.filters',
+  'myApp.services',
+  'myApp.directives',
+  'vchatLoaderApp.controllers'
+]).
+Index.html --- DOM bundle 
+<DOCTYPE html>
+<html> 
+Meta: ?
+Link?
+<title></title>
+<head>
+<body> 
+{{video}}, {{audio}}, {{screenCapture}}
+</body>
+</head>
+</html>
+CSS --- simple layout with 6 buttons
+- Button1: low definition
+- Button2: medium definition 
+- Button3: high definition
+- Button4: screen Capture
+- Button5: send 
+- Button6: Terms of use
+Services.js  --- fetch data from the RESTful server
+Angular.module(‘vchatLoarderApp.services’, []).
+Factory(‘vchatAPIservice’, function($http){
+Var vchatAPI = {};
+vcahAPI.getStream = function(){
+return $http({
+method: ‘JSON’
+.
+.
+.
+.
+})
+}
+})
+Filters --- optional if only should the app implement a search filed. 
+<input type=”text” ng-model=”nameFiler” placeholder=”search…”/>
+
+
