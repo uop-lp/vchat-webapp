@@ -4,6 +4,7 @@
 
 
 // Demonstrate how to register services
+<<<<<<< HEAD
 // In this case it is a simple value service or http service.
 
 //loading data from the server
@@ -25,3 +26,8 @@ angular.module('vchatLoaderApp.services', [])
   }
      return vchatAPI;
   );
+=======
+// In this case it is a simple value service.
+angular.module('myApp.services', []).
+  value('version', '0.1');
+>>>>>>> 73c92225393e208318f6c82e9215791fe4b8d7f2

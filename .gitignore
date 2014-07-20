@@ -4,4 +4,9 @@ node_modules/
 bower_components/
 tmp
 .DS_Store
+<<<<<<< HEAD
 .idea
+=======
+.idea
+*.iml
+>>>>>>> 73c92225393e208318f6c82e9215791fe4b8d7f2
