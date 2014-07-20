@@ -1,11 +1,13 @@
-'use strict';
+//Angular wrapper directives
+
 
 /* Controllers */
 
-angular.module('myApp.controllers', [])
-  .controller('MyCtrl1', ['$scope', function($scope) {
+var vchatApp = angular.module('vchatApp', []);
 
-  }])
-  .controller('MyCtrl2', ['$scope', function($scope) {
+vchatApp.controller('vchatCtrl', function($scope) {
+  $scope.?????????? = [
+    /*to contain stream objects*/
+  ];
+});
 
-  }]);
